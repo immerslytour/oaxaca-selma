@@ -58,15 +58,6 @@
     .marquee-track span{font-size:.7rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);white-space:nowrap;padding-right:2.5rem}
     .marquee-track span b{color:var(--red)}
     @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-    /* CAROUSEL */
-    .carousel-wrap{padding:3rem 0 0;background:var(--dark-card);overflow:hidden}
-    .carousel-title{text-align:center;font-size:.7rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--red);margin-bottom:1.5rem}
-    .carousel-track{display:flex;gap:16px;width:max-content;animation:slide 36s linear infinite;padding:0 5vw}
-    .carousel-wrap:hover .carousel-track{animation-play-state:paused}
-    .dish-card{flex-shrink:0;width:180px;border-radius:14px;overflow:hidden;border:1px solid var(--border);background:var(--glass)}
-    .dish-card img{width:100%;height:140px;object-fit:cover;display:block}
-    .dish-label{padding:8px 10px;font-size:.72rem;font-weight:600;color:var(--gold);text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-    @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
     /* SECTION */
     section{padding:6rem 5vw}
     .section-label{font-size:.7rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--red);margin-bottom:.75rem}
@@ -205,29 +196,6 @@
     <span data-es="MOLE NEGRO ✦ CLAYUDA ✦ MOLCAJETE ✦ TASAJO ✦ CECINA ✦ MARISCOS ✦ MEMELA MIXTA ✦ CHAPULINES ✦ MEZCAL ✦ BARBACOA DE CHIVO ✦ TORTILLAS A MANO ✦ " data-en="BLACK MOLE ✦ CLAYUDA ✦ TASAJO ✦ CECINA ✦ SEAFOOD ✦ MIXED MEMELA ✦ CHAPULINES ✦ MEZCAL ✦ GOAT BARBACOA ✦ HANDMADE TORTILLAS ✦ ">MOLE NEGRO <b>✦</b> CLAYUDA <b>✦</b> MOLCAJETE <b>✦</b> TASAJO <b>✦</b> CECINA <b>✦</b> MARISCOS <b>✦</b> MEMELA MIXTA <b>✦</b> CHAPULINES <b>✦</b> MEZCAL <b>✦</b> BARBACOA DE CHIVO <b>✦</b> TORTILLAS A MANO <b>✦</b> </span>
   </div>
 </div>
-
-<!-- DISH CAROUSEL -->
-<div class="carousel-wrap">
-  <p class="carousel-title" data-es="Algunos de nuestros platillos" data-en="Some of our dishes">Some of our dishes</p>
-  <div class="carousel-track">
-    <div class="dish-card"><img src="img/dishes/clayuda_mixta.jpg" alt="Clayuda Mixta"/><div class="dish-label" data-es="Clayuda Mixta" data-en="Mixed Clayuda">Mixed Clayuda</div></div>
-    <div class="dish-card"><img src="img/dishes/clayuda_tradicional.jpg" alt="Clayuda Tradicional"/><div class="dish-label" data-es="Clayuda Tradicional" data-en="Traditional Clayuda">Traditional Clayuda</div></div>
-    <div class="dish-card"><img src="img/dishes/molcajete.jpg" alt="Molcajete"/><div class="dish-label" data-es="Molcajete" data-en="Molcajete">Molcajete</div></div>
-    <div class="dish-card"><img src="img/dishes/camarones_plancha.jpg" alt="Camarones a la Plancha"/><div class="dish-label" data-es="Camarones a la Plancha" data-en="Grilled Shrimp">Grilled Shrimp</div></div>
-    <div class="dish-card"><img src="img/dishes/coctel_camaron.jpg" alt="Coctel de Camarón"/><div class="dish-label" data-es="Coctel de Camarón" data-en="Shrimp Cocktail">Shrimp Cocktail</div></div>
-    <div class="dish-card"><img src="img/dishes/mojarra_frita.jpg" alt="Mojarra Frita"/><div class="dish-label" data-es="Mojarra Frita" data-en="Fried Perch">Fried Perch</div></div>
-    <div class="dish-card"><img src="img/dishes/memela_mixta.jpg" alt="Memela Mixta"/><div class="dish-label" data-es="Memela Mixta" data-en="Mixed Memelas">Mixed Memelas</div></div>
-    <div class="dish-card"><img src="img/dishes/chapulines.jpg" alt="Chapulines"/><div class="dish-label" data-es="Botana de Chapulines" data-en="Cricket Appetizer">Cricket Appetizer</div></div>
-    <!-- duplicate for seamless loop -->
-    <div class="dish-card"><img src="img/dishes/clayuda_mixta.jpg" alt="Clayuda Mixta"/><div class="dish-label" data-es="Clayuda Mixta" data-en="Mixed Clayuda">Mixed Clayuda</div></div>
-    <div class="dish-card"><img src="img/dishes/clayuda_tradicional.jpg" alt="Clayuda Tradicional"/><div class="dish-label" data-es="Clayuda Tradicional" data-en="Traditional Clayuda">Traditional Clayuda</div></div>
-    <div class="dish-card"><img src="img/dishes/molcajete.jpg" alt="Molcajete"/><div class="dish-label" data-es="Molcajete" data-en="Molcajete">Molcajete</div></div>
-    <div class="dish-card"><img src="img/dishes/camarones_plancha.jpg" alt="Camarones a la Plancha"/><div class="dish-label" data-es="Camarones a la Plancha" data-en="Grilled Shrimp">Grilled Shrimp</div></div>
-    <div class="dish-card"><img src="img/dishes/coctel_camaron.jpg" alt="Coctel de Camarón"/><div class="dish-label" data-es="Coctel de Camarón" data-en="Shrimp Cocktail">Shrimp Cocktail</div></div>
-    <div class="dish-card"><img src="img/dishes/mojarra_frita.jpg" alt="Mojarra Frita"/><div class="dish-label" data-es="Mojarra Frita" data-en="Fried Perch">Fried Perch</div></div>
-    <div class="dish-card"><img src="img/dishes/memela_mixta.jpg" alt="Memela Mixta"/><div class="dish-label" data-es="Memela Mixta" data-en="Mixed Memelas">Mixed Memelas</div></div>
-    <div class="dish-card"><img src="img/dishes/chapulines.jpg" alt="Chapulines"/><div class="dish-label" data-es="Botana de Chapulines" data-en="Cricket Appetizer">Cricket Appetizer</div></div>
-  </div>
 
 <!-- MENU -->
 <section id="menu">
